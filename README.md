@@ -13,3 +13,5 @@ Associated Hardware:
 Wiring of the cameras should not be much of a hassle, since the IR camera's ribbon cable will plug directly into the camera port & SparkFun has a detail tutorial on how to configure the FLiR dev board.
 
 The Raspberry Pi is running on Raspbian Stretch 9.9
+
+##Commit from r pi
