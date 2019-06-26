@@ -8,7 +8,7 @@ import time
 
 ##set the camera to cap
 cap = cv2.VideoCapture(0)
-if cap.isOpened() == False: #카메라 생성 확인
+if cap.isOpened() == False: #Check for Camera
     print ('Can\'t open the CAM(%d)' % (CAM_ID))
     exit()
 
