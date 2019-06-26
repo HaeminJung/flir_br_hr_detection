@@ -5,13 +5,10 @@ import imutils
 import dlib
 import cv2
 import time
+from cam import getCam
 
 ##set the camera to cap
-cap = cv2.VideoCapture(0)
-if cap.isOpened() == False: #Check for Camera
-    print ('Can\'t open the CAM(%d)' % (CAM_ID))
-    exit()
-
+cap = getCam()
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor
 p = "shape_predictor_68_face_landmarks.dat"
