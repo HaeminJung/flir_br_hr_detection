@@ -1,5 +1,6 @@
 # ignore cam.py => different setting on Uduntu and Pi
 cam.py
+shape_predictor_68_face_landmarks.dat
 
 
 # Created by https://www.gitignore.io/api/python

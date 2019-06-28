@@ -14,4 +14,7 @@ Wiring of the cameras should not be much of a hassle, since the IR camera's ribb
 
 The Raspberry Pi is running on Raspbian Stretch 9.9
 
+shape_predictor and cam.py will not be synced. It is to keep the system running both for the laptop(Ubuntu18.04) and Raspberry Pi.
+
 ##Commit from r pi
+
