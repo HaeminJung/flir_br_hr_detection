@@ -5,10 +5,10 @@ import imutils
 import dlib
 import cv2
 import time
-from cam import getCam
+import cam
 
 ##set the camera to cap
-cap = getCam()
+camera, rawArray = cam.getCam()
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor
 p = "shape_predictor_68_face_landmarks.dat"
@@ -19,9 +19,9 @@ prevTime = 0
 
 while(True):
     # Capture frame-by-frame
-    ret, frame = cap.read()
+    frame = cam.getImg(camera, rawArray)
 
-    resize = cv2.resize(frame, (480, 320)) 
+    resize = cv2.resize(frame, (640,480)) 
     resize = cv2.cvtColor(resize, cv2.COLOR_BGR2GRAY)
 
     # Our operations on the frame come here
